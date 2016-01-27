@@ -223,7 +223,8 @@ function create_config( )
     "info",
     "welcome",
     "anti_link",
-    "cpu"
+    "cpu",
+    "plugins"
     },
     sudo_users = {80182995},--Sudo users
     disabled_channels = {},
