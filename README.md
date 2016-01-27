@@ -1,4 +1,4 @@
-# [TeleSeed](https://telegram.me/TeleSeed) 
+# [Se[N]aToR](https://telegram.me/tele_senator) 
 **An advance and powerful Administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under [GNU General public License](https://github.com/SEEDTEAM/TeleSeed/blob/master/LICENSE)**
 # Features
 
