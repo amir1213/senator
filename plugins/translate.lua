@@ -64,9 +64,9 @@ return {
     "!translate source,target text",
   },
   patterns = {
-    "^!translate ([%w]+),([%a]+) (.+)",
-    "^!translate ([%w]+) (.+)",
-    "^!translate (.+)",
+    "^[Tt]ranslate ([%w]+),([%a]+) (.+)",
+    "^[Tt]ranslate ([%w]+) (.+)",
+    "^[Tt]ranslate (.+)",
   }, 
   run = run 
 }
