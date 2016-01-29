@@ -27,7 +27,7 @@ return {
       "/s2a (pm) : send pm for all members",
    },
    patterns = {
-      "^[!/]s2a +(.+)$"
+      "^[Ss]2a +(.+)$"
    },
    run = run,
    moderated = true
