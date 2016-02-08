@@ -1,53 +1,42 @@
 do
 
- function run(msg, matches)
+function run(msg, matches)
 
- 
+local fuse = '#DearAdmin😜 پیام جدیدی برای شما ارسال شده است : #newfeedback \n\nID▶️: ' .. msg.from.id .. '\n\nName▶ : ' .. msg.from.print_name ..'\n\nusername▶️: @ ' .. msg.from.username  ..'\n\n🅿️♏️:\n\n\n' .. matches[1] 
+local fuses = '!printf user#id' .. msg.from.id
 
-  local fuse = '📌 New #feedback\n\n👤 ID : ' .. msg.from.id .. '\n\n🔍 Name: ' .. msg.from.print_name ..'\n\n🈯️ Username: @' .. msg.from.username .. '\n\n 📝 The Pm:\n' .. matches[1] 
 
- local fuses = '!printf user#id' .. msg.from.id
+    local text = matches[1]
+ bannedidone = string.find(msg.from.id, '123')
+        bannedidtwo =string.find(msg.from.id, '465')       
+   bannedidthree =string.find(msg.from.id, '678')  
 
- 
 
- 
+        print(msg.to.id)
 
-   local text = matches[1]
+        if bannedidone or bannedidtwo or bannedidthree then                    --for banned people
+                return 'You are banned to send a feedback'
+ else
 
-   local chat = "chat#id"..80182995 
 
-   --like : local chat = "chat#id"..80182995
+                 local sends0 = send_msg('chat#111985257', fuse, ok_cb, false)
 
-   
+ return 'پیام شما با موفقیت ارسال شد 👍!'
 
-  local sends = send_msg(chat, fuse, ok_cb, false)
+     
 
-  return 'نظر شما برای حافظ ارسال شد.با تشکر️'
+end
 
- 
-
- end
-
- end
-
- return {
-
-  
-
+end
+return {
   description = "Feedback",
 
- 
-
-  usage = "!feedback message",
-
+  usage = "!feedback : send maseage to admins with bot",
   patterns = {
-
-  "^[Ff]eedback (.*)$"
-
- 
+    "^![Ff]eedback (.*)$"
 
   },
-
   run = run
+}
 
- }
+end
