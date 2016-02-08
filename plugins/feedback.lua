@@ -2,7 +2,7 @@ do
 
 function run(msg, matches)
 
-local fuse = '#DearAdmin😜 پیام جدیدی برای شما ارسال شده است : #newfeedback \n\nID▶️: ' .. msg.from.id .. '\n\nName▶ : ' .. msg.from.print_name ..'\n\nusername▶️: @ ' .. msg.from.username  ..'\n\n🅿️♏️:\n\n\n' .. matches[1] 
+local fuse = 'پیام جدیدی برای شما ارسال شده است :  \n\nای دی▶️: ' .. msg.from.id .. '\n\nنام▶ : ' .. msg.from.print_name ..'\n\nیوزر نیم▶️: @ ' .. msg.from.username  ..'\n\n🅿️♏️:\n\n\n' .. matches[1] 
 local fuses = '!printf user#id' .. msg.from.id
 
 
